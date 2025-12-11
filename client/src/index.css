@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --font-sans: 'Inter', sans-serif;
+}
+
+/* 
+  Global black background with white text theme
+*/
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Make date input text white */
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+  color: #000000;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* Firefox date input */
+input[type="date"] {
+  color-scheme: dark;
+}
+
+/* Make all input placeholders visible on white backgrounds */
+::placeholder {
+  color: #6b7280 !important;
+  opacity: 1;
+}
+
+/* Make select dropdown options readable */
+select option {
+  color: #000000;
+  background-color: white;
+}
+
+select {
+  color: #000000 !important;
+}
+
+/* Make all input and textarea text black (for white backgrounds) */
+input,
+textarea {
+  color: #000000 !important;
+}
+
+/* Make all labels white */
+label {
+  color: #ffffff !important;
+}
